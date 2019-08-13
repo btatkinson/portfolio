@@ -24,13 +24,8 @@ class App extends Component {
   }
 
   enter = (pathname, node) => {
-    if (pathname !== '/'){
-      this.setState({splashClasses:{
-        size:'condensed',
-        text:'evaporated',
-        header:'hd-show'
-      }})
-    }
+    console.log(pathname);
+    console.log(pathname);
     return
   }
   exit = (pathname, node) => {
@@ -49,11 +44,11 @@ class App extends Component {
               key={key}
               onEnter={(node) => this.enter(pathname, node)}
               onExit = {(node) => this.exit(pathname, node)}
-              timeout={{enter: 300, exit: 300}}
+              timeout={{enter: 2000, exit: 2000}}
               classNames={'transition'}
             >
               <Switch location={location}>
-                <Route path="/" render={(props)=>{return(<Splash splashClasses={this.state.splashClasses}/>)}}/>
+                <Route exact path="/" component={Splash}/>
                 <Route exact path="/portfolio" component={Portfolio} />
                 <Route exact path="/resume" component={Resume} />
               </Switch>

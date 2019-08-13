@@ -1,5 +1,6 @@
 
 $head-height: 150px;
+$sp-exittime: 2s;
 
 .splash{
   height: 100%;
@@ -13,96 +14,6 @@ $head-height: 150px;
   background-size: 400% 400%;
   animation: gradientBG1 3s forwards;
 }
-
-.condensed{
-  height: $head-height;
-  width:100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: flex-end;
-  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradientBG2 3s forwards;
-}
-.fade-in{
-  animation: fadein 2s forwards;
-}
-.evaporated{
-  animation: evaporate 1s forwards;
-  display:none !important;
-}
-.devaporated{
-  animation: devaporate 1s forwards;
-  animation-delay: 2s;
-}
-.hd-container{
-  width: 100%;
-  display: flex;
-}
-.hd-container>h1{
-  width: 300px;
-  margin-left: 50px;
-  color:white;
-}
-.hd-container>h1{
-  width: 300px;
-}
-.hd-hide{
-  display: none;
-}
-.hd-show{
-  opacity: 0;
-  animation: l2r 1s forwards;
-  animation-delay: 2s;
-}
-
-@keyframes l2r{
-  0% {
-    opacity: 0;
-    margin-left: 50px;
-  }
-  100% {
-    opacity: 1;
-    margin-left: 0px;
-  }
-}
-
-@keyframes fadein{
-  0% {
-    opacity: 0;
-    margin-bottom: 20px;
-  }
-  100% {
-    opacity: 1;
-    margin-bottom: 0px;
-  }
-}
-
-@keyframes devaporate{
-  0% {
-    opacity: 0;
-    margin-bottom: 20px;
-  }
-  100% {
-    opacity: 1;
-    margin-bottom: 0px;
-  }
-}
-@keyframes evaporate{
-  0% {
-    opacity: 1;
-    margin-bottom: 0px;
-    justify-content: center;
-  }
-  100% {
-    opacity: 0;
-    margin-bottom: 20px;
-    justify-content: flex-end;
-    display: none;
-  }
-}
-
 @keyframes gradientBG1 {
   0% {
     background-position: 0% 50%;
@@ -110,23 +21,38 @@ $head-height: 150px;
   100% {
     background-position: 100% 50%;
   }
-  // 100% {
-  //   background-position: 0% 50%;
-  // }
 }
-
 @keyframes gradientBG2 {
   0% {
-    background-position: 0% 50%;
-    height:100%;
-  }
-  100% {
-    height: $head-height;
     background-position: 100% 50%;
   }
-  // 100% {
-  //   background-position: 0% 50%;
-  // }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.splash.transition-enter {
+  opacity: 0.01;
+  transform: scale(1.1);
+}
+
+.splash.transition-enter-active {
+  opacity: 1;
+  transition: all 2000ms;
+}
+
+.splash.transition-exit {
+  opacity: 1;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.splash.transition-exit-active {
+  opacity: 0;
+  height: 150px;
+  transition: all $sp-exittime;
+  animation: gradientBG2 $sp-exittime forwards;
 }
 
 .sp-container{
