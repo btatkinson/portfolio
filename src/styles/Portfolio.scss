@@ -1,0 +1,21 @@
+
+.portfolio>h1{
+  margin: 0;
+}
+
+.portfolio-enter {
+  height: 0px;
+  width: 100%;
+}
+.portfolio-enter-active {
+  height:300px;
+  transition: height 3000ms;
+}
+.portfolio-exit {
+  height:300px;
+  width: 100%;
+}
+.portfolio-exit-active {
+  height: 0px;
+  transition: height 3000ms;
+}

@@ -1,0 +1,25 @@
+.splash-enter {
+  opacity: 0.01;
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
+.splash-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 300ms;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
+.splash-exit {
+  opacity: 1;
+  transform: scale(1);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
+.splash-exit-active {
+  opacity: 0.01;
+  transform: scale(1.1);
+  transition: all 300ms;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
