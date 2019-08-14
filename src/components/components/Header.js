@@ -5,9 +5,11 @@ import { faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/Header.scss';
 
 class Header extends Component {
+
   constructor(props) {
     super(props);
   }
+
   render(){
     return(
       <div className='header'>
@@ -15,7 +17,7 @@ class Header extends Component {
           <h1 className='hd-title'>{this.props.title}</h1>
           <Link to='/' className='hd-link'>
             <FontAwesomeIcon className='hd-link-text' icon={faChevronCircleLeft} />
-            <h3 className='hd-link-text'> Back</h3>
+            <p className='hd-link-text'> Back</p>
           </Link>
         </div>
       </div>

@@ -12,7 +12,7 @@
 .title-group{
   display:flex;
   margin-right: auto;
-  margin-left: 50px;
+  margin-left: 75px;
   width: 100%;
   height: 100px;
 }
@@ -36,8 +36,20 @@
   margin-left:auto;
   margin-top:auto;
   margin-bottom:auto;
-  margin-right:50px;
+  margin-right:75px;
   text-decoration: none;
+}
+
+.hd-link:hover{
+  background-color: white;
+  text-decoration: none;
+  transform: translateX(-0.125em) translateY(-0.125em);
+  box-shadow: 0 0.25em 0.25em -0.2em grey;
+}
+
+
+.hd-link:hover>*{
+  color:rgb(100,100,100);
 }
 
 .hd-link-text{

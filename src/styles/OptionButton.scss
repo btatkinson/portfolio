@@ -1,8 +1,65 @@
+@import './colors.scss';
+
+
+$borderWidth: 3px;
 
 
 .OptionButton{
   border-radius: 50%;
-  background-color: grey;
+  background-color: $lgrey;
   width: 150px;
   height:150px;
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: grey;
 }
+
+.OP-selected{
+  margin-left:47px;
+  margin-right:47px;
+  background-color: grey;
+}
+
+.OptionButton:hover{
+  margin-left:47px;
+  margin-right:47px;
+  background-color: grey;
+}
+
+.OP-selected.Writing{
+  border: $borderWidth solid $blue;
+  color: $blue;
+
+}
+.OptionButton.Writing:hover{
+  border: $borderWidth solid $blue;
+  color: $blue;
+}
+
+.OP-selected.Python{
+  border: $borderWidth solid yellow;
+  color: yellow;
+}
+.OptionButton.Python:hover{
+  border: $borderWidth solid yellow;
+  color: yellow;
+}
+
+.OP-selected.Web{
+  border: $borderWidth solid $green;
+  color: $green;
+}
+.OptionButton.Web:hover{
+  border: $borderWidth solid $green;
+  color: $green;
+}
+
+
+
+// end
