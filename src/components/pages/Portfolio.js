@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Header from '../components/Header.js';
 import OptionButton from '../components/OptionButton.js';
+import ProjectItem from '../components/ProjectItem.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFootballBall } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/Portfolio.scss';
 
 class Portfolio extends Component {
@@ -41,6 +44,16 @@ class Portfolio extends Component {
   }
 
   render(){
+    const explInfo = {
+      'title':'The 2018 Kansas City Chiefs and an Explosiveness Metric in Football',
+      'subtitle': 'How do we quantify explosiveness?',
+      'icon':faFootballBall,
+      'skill1':'Python',
+      'skill2':'Cleaning',
+      'skill3':'Math',
+      'url':'https://towardsdatascience.com/the-2018-kansas-city-chiefs-and-an-explosiveness-metric-in-football-c3b3fd447d73',
+    }
+
     return(
       <div className='portfolio'>
         <Header title="Portfolio"/>
@@ -62,6 +75,8 @@ class Portfolio extends Component {
           </div>
           <div className='p-listItems'>
             <div className='p-writing'>
+              <ProjectItem imgSrc="" info={explInfo}/>
+              <ProjectItem imgSrc="" info={explInfo}/>
             </div>
             <div className='p-python'>
             </div>

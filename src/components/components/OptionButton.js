@@ -39,6 +39,7 @@ class OptionButton extends Component {
           onClick={this.handleSelect}>
           {icon}
         </div>
+        <h1 className={`OptionText ${this.props.option} ${this.props.selected ? 'OP-text-select' : 'OP-text-unselect'}`}>{this.props.option}</h1>
       </div>
     )
   }

@@ -23,13 +23,32 @@ $borderWidth: 3px;
 .OP-selected{
   margin-left:47px;
   margin-right:47px;
+  margin-top:-3px;
+  margin-bottom: -3px;
   background-color: grey;
 }
 
 .OptionButton:hover{
   margin-left:47px;
   margin-right:47px;
+  margin-top:-3px;
+  margin-bottom: -3px;
   background-color: grey;
+}
+
+.OptionText{
+  text-align: center;
+  color: $lgrey;
+}
+.OP-text-select.Writing{
+  color: $blue;
+}
+.OP-text-select.Python{
+  color: grey;
+  // text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+}
+.OP-text-select.Web{
+  color: $green;
 }
 
 .OP-selected.Writing{

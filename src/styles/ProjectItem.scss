@@ -1,0 +1,76 @@
+@import './_colors.scss';
+
+.project-item-container{
+  width:99.75%;
+  height: 150px;
+  border: double 2px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(white, white);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+}
+.project-item-container:hover{
+  border: double 2px transparent;
+  border-radius: 3px; // option to add border radius
+  background-image: linear-gradient(white, white), linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) !important;
+  transform: translateY(-1px) translateX(-1px);
+}
+
+.project-link{
+  text-decoration: none;
+}
+
+.project-item{
+  height:85%;
+  width: 100%;
+  padding: 12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proj-icon{
+  height:100%;
+  width:15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: grey;
+}
+
+.proj-title{
+  height: 100%;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proj-title>div>h2{
+  color:grey;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.proj-title>div>p{
+  color: grey;
+  margin-top: 10px;
+}
+
+.proj-skills{
+  height: 100%;
+  width: 20%;
+  color:grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proj-skills>div>h4{
+  margin-right:10px;
+
+}
+.proj-skills>div>p{
+  font-size:15px;
+  margin-left:10px;
+  margin-bottom: 4px;
+  margin-top:4px;
+}
