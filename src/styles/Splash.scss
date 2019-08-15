@@ -32,13 +32,28 @@ $sp-exittime: 2s;
 }
 
 .splash.transition-enter {
-  opacity: 0.01;
-  transform: scale(1.1);
+  opacity: 0.05;
+  height: 150px;
 }
 
 .splash.transition-enter-active {
   opacity: 1;
-  transition: all 2000ms;
+  position: absolute;
+  top:0;
+  left: 0;
+  transition: all $sp-exittime;
+  animation: gradientBG1 $sp-exittime forwards;
+}
+.splash.transition-enter>* {
+  opacity: 0.00;
+  transform: translateY(-10px);
+}
+
+.splash.transition-enter-active>*{
+  opacity: 1;
+  transition: all 1000ms;
+  transition-delay: 1000ms;
+  transform: translateY(0px);
 }
 
 .splash.transition-exit {
@@ -55,10 +70,20 @@ $sp-exittime: 2s;
   animation: gradientBG2 $sp-exittime forwards;
 }
 
+.splash.transition-exit>* {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.splash.transition-exit-active>* {
+  opacity: 0.0;
+  transition: all 1000ms;
+  transform: translateY(-10px);
+}
+
 .sp-container{
-  height: 400px;
-  width: 600px;
-  border-radius:10%;
+  height: 50%;
+  width: 75%;
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -70,19 +95,34 @@ $sp-exittime: 2s;
   color: white;
 }
 
+.sp-body{
+  width: 100%;
+  color: white;
+}
+
+.sp-link{
+  color:white;
+  text-decoration: none;
+}
+.sp-link:hover{
+  text-shadow: 0 2px 2px black;
+}
+
+.bump-hover:hover{
+  transform: translateY(-2px);
+}
+
 .spr-box{
-  padding:35px;
-  border-radius: 10%;
-  margin: 5%;
+  padding:0px;
+  margin: 0px;
   display: flex;
   flex-direction: row;
   color: white;
 }
 
 .spp-box{
-  border-radius: 10%;
-  padding: 35px;
-  margin: 5%;
+  padding:0px;
+  margin: 0px;
   display: flex;
   flex-direction: row;
   color: white;
