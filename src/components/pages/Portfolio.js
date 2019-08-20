@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import Header from '../components/Header.js';
 import OptionButton from '../components/OptionButton.js';
 import ProjectItem from '../components/ProjectItem.js';
+import { pwriting }from '../../objects/portfolio-writing.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFootballBall } from '@fortawesome/free-solid-svg-icons';
+import { faFootballBall,faBasketballBall, faGolfBall } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/Portfolio.scss';
 
 class Portfolio extends Component {
@@ -54,6 +55,13 @@ class Portfolio extends Component {
       'url':'https://towardsdatascience.com/the-2018-kansas-city-chiefs-and-an-explosiveness-metric-in-football-c3b3fd447d73',
     }
 
+    const projectItems = [];
+    const pILength = Object.keys(pwriting).length;
+
+    for (let i = 0; i < pILength; i++) {
+      projectItems.push(<ProjectItem key={i} info={pwriting[i]}/>);
+    };
+
     return(
       <div className='portfolio'>
         <Header title="Portfolio"/>
@@ -75,8 +83,7 @@ class Portfolio extends Component {
           </div>
           <div className='p-listItems'>
             <div className='p-writing'>
-              <ProjectItem imgSrc="" info={explInfo}/>
-              <ProjectItem imgSrc="" info={explInfo}/>
+              {projectItems}
             </div>
             <div className='p-python'>
             </div>

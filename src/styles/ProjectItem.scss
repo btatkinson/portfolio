@@ -26,12 +26,12 @@
   padding: 12.5px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .proj-icon{
   height:100%;
-  width:15%;
+  width:12.5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,9 +41,9 @@
 
 .proj-title{
   height: 100%;
-  width: 65%;
+  width: 62.5%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .proj-title>div>h2{
@@ -58,7 +58,7 @@
 
 .proj-skills{
   height: 100%;
-  width: 20%;
+  width: 25%;
   color:grey;
   display: flex;
   justify-content: center;
