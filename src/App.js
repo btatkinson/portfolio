@@ -5,6 +5,7 @@ import Splash from './components/pages/Splash.js';
 import Resume from './components/pages/Resume.js';
 import Portfolio from './components/pages/Portfolio.js';
 import Page from './components/helpers/Page.js';
+import './styles/Transitions.scss';
 import './App.css';
 
 class App extends Component {

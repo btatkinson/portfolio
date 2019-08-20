@@ -31,56 +31,6 @@ $sp-exittime: 2s;
   }
 }
 
-.splash.transition-enter {
-  opacity: 0.05;
-  height: 150px;
-}
-
-.splash.transition-enter-active {
-  opacity: 1;
-  position: absolute;
-  top:0;
-  left: 0;
-  transition: all $sp-exittime;
-  animation: gradientBG1 $sp-exittime forwards;
-}
-.splash.transition-enter>* {
-  opacity: 0.00;
-  transform: translateY(-10px);
-}
-
-.splash.transition-enter-active>*{
-  opacity: 1;
-  transition: all 1000ms;
-  transition-delay: 1000ms;
-  transform: translateY(0px);
-}
-
-.splash.transition-exit {
-  opacity: 1;
-  position: absolute;
-  top:0;
-  left: 0;
-}
-
-.splash.transition-exit-active {
-  opacity: 0.05;
-  height: 150px;
-  transition: all $sp-exittime;
-  animation: gradientBG2 $sp-exittime forwards;
-}
-
-.splash.transition-exit>* {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.splash.transition-exit-active>* {
-  opacity: 0.0;
-  transition: all 1000ms;
-  transform: translateY(-10px);
-}
-
 .sp-container{
   height: 50%;
   width: 75%;

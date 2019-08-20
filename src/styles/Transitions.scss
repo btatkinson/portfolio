@@ -1,9 +1,11 @@
-// SPLASH
+$exittime: 2000ms;
+$entertime: 2000ms;
 
 .splash.transition-enter {
   opacity: 0.05;
   height: 150px;
-  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradientBG1 $entertime forwards;
 }
 
 .splash.transition-enter-active {
@@ -11,89 +13,42 @@
   position: absolute;
   top:0;
   left: 0;
-  transition: all $sp-exittime;
-  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  height: 100%;
+  transition: all $entertime;
 }
 .splash.transition-enter>* {
   opacity: 0.00;
-  transform: translateY(-10px);
 }
 
 .splash.transition-enter-active>*{
   opacity: 1;
-  transition: all 1000ms;
-  transition-delay: 1000ms;
-  transform: translateY(0px);
+  // height: 100%;
+  transition: all $exittime;
+
 }
 
 .splash.transition-exit {
   opacity: 1;
   position: absolute;
+  z-index:1;
   top:0;
   left: 0;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 }
-
+//
 .splash.transition-exit-active {
   opacity: 0.05;
   height: 150px;
-  transition: all $sp-exittime;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  transition: all $exittime;
+  animation: gradientBG2 $exittime forwards;
 }
-
-.splash.transition-exit>* {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.splash.transition-exit-active>* {
-  opacity: 0.0;
-  transition: all 1000ms;
-  transform: translateY(-10px);
-}
-
-// PORTFOLIO
-
-.portfolio.transition-enter {
-  opacity: 0.00;
-  transform: scale(1.0);
-}
-
-.portfolio.transition-enter-active {
-  opacity: 1;
-  transform: scale(1.1);
-  transition: all $sp-exittime;
-}
-.portfolio.transition-enter>.portfolio-body {
-  opacity: 0.00;
-  transform: scale(1.0);
-}
-
-.portfolio.transition-enter-active>.portfolio-body{
-  opacity: 1;
-  transform: scale(1.1);
-  transition: all 1000ms;
-  transition-delay: 1000ms;
-}
-
-.portfolio.transition-exit {
-  opacity: 1;
-  transform: scale(1.1);
-}
-
-.portfolio.transition-exit-active {
-  opacity: 0.0;
-  transform: scale(1.0);
-  transition: all $sp-exittime;
-}
-
-.portfolio.transition-exit>.portfolio-body{
-  opacity: 1;
-  transform: scale(1.1);
-}
-
-.portfolio.transition-exit-active>.portfolio-body{
-  opacity: 0.0;
-  transform: scale(1.0);
-  transition: all 1000ms;
-}
+//
+// .splash.transition-exit>* {
+//   opacity: 1;
+//   transform: translateY(0);
+// }
+//
+// .splash.transition-exit-active>* {
+//   opacity: 0.0;
+//   transition: all 1000ms;
+//   transform: translateY(-10px);
+// }

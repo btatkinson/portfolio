@@ -3,6 +3,8 @@ import Header from '../components/Header.js';
 import OptionButton from '../components/OptionButton.js';
 import ProjectItem from '../components/ProjectItem.js';
 import { pwriting }from '../../objects/portfolio-writing.js';
+import { pweb }from '../../objects/portfolio-web.js';
+import { ppython }from '../../objects/portfolio-python.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFootballBall,faBasketballBall, faGolfBall } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/Portfolio.scss';
@@ -45,33 +47,35 @@ class Portfolio extends Component {
   }
 
   render(){
-    const explInfo = {
-      'title':'The 2018 Kansas City Chiefs and an Explosiveness Metric in Football',
-      'subtitle': 'How do we quantify explosiveness?',
-      'icon':faFootballBall,
-      'skill1':'Python',
-      'skill2':'Cleaning',
-      'skill3':'Math',
-      'url':'https://towardsdatascience.com/the-2018-kansas-city-chiefs-and-an-explosiveness-metric-in-football-c3b3fd447d73',
-    }
+    const portfolioItems = [];
+    const wrILength = Object.keys(pwriting).length;
 
-    const projectItems = [];
-    const pILength = Object.keys(pwriting).length;
+    for (let i = 0; i < wrILength; i++) {
+      portfolioItems.push(<ProjectItem key={i} info={pwriting[i]}/>);
+    };
 
+    const webItems = [];
+    const wILength = Object.keys(pweb).length;
+    for (let i = 0; i < wILength; i++) {
+      webItems.push(<ProjectItem key={i} info={pweb[i]}/>);
+    };
+
+
+    const pythonItems = [];
+    const pILength = Object.keys(ppython).length;
     for (let i = 0; i < pILength; i++) {
-      projectItems.push(<ProjectItem key={i} info={pwriting[i]}/>);
+      pythonItems.push(<ProjectItem key={i} info={ppython[i]}/>);
     };
 
     return(
       <div className='portfolio'>
-        <Header title="Portfolio"/>
+        <Header className='p-header' title="Portfolio"/>
         <div className='portfolio-body'>
           <div className='portfolio-options'>
             <OptionButton
               option='Writing'
               selected={this.state.selectedButton.writing}
               newSelect={this.selectButton}/>
-
             <OptionButton
               option='Python'
               selected={this.state.selectedButton.python}
@@ -83,11 +87,13 @@ class Portfolio extends Component {
           </div>
           <div className='p-listItems'>
             <div className='p-writing'>
-              {projectItems}
+              {this.state.selectedButton.writing ? portfolioItems : ''}
             </div>
             <div className='p-python'>
+              {this.state.selectedButton.python ? pythonItems : ''}
             </div>
             <div className='p-web'>
+              {this.state.selectedButton.web ? webItems : ''}
             </div>
           </div>
         </div>
