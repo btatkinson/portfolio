@@ -36,9 +36,18 @@ export const pwriting = {
     'skill1':'Python/Matplotlib',
     'skill2':'Web Scraping',
     'skill3':'Statistical Transforms',
-    'url':'https://towardsdatascience.com/visualizing-different-nfl-player-styles-88ef31420539',
+    'url':'https://medium.com/@BlakeAtkinson/do-long-flights-affect-professional-golfers-1995699d5611',
   },
   4:{
+    'title':'Run More Trick Plays',
+    'subtitle': 'An analysis of NFL trick plays, 2009–2019, inspired by Mohamed Sanu',
+    'icon':faFootballBall,
+    'skill1':'Python/Matplotlib',
+    'skill2':'Data Cleaning',
+    'skill3':'Feature Engineering',
+    'url':'https://towardsdatascience.com/run-more-trick-plays-d7c4ff0cd813',
+  },
+  5:{
     'title':'What Would an NHL Hockey 2-point Line Look Like?',
     'subtitle': 'A stats experiment using the NHL API',
     'icon':faFootballBall,
@@ -47,7 +56,7 @@ export const pwriting = {
     'skill3':'Gaussian Smoothing',
     'url':'https://towardsdatascience.com/what-would-a-hockey-2-point-line-look-like-bf6b3192226a',
   },
-  5:{
+  6:{
     'title':'Rating Sports Teams — Maximizing A Generic System',
     'subtitle': 'How much information can we get from just a score line?',
     'icon':faBasketballBall,

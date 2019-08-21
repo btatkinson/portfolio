@@ -19,9 +19,24 @@ class Splash extends Component {
             <h4>Data Science • Front End Web Development</h4>
           </div>
           <div className='sp-body'>
-            <Link className='sp-link' to='/portfolio'><h1 className='bump-hover'>Portfolio</h1></Link>
-            <Link className='sp-link' to='/resume'><h1 className='bump-hover'>Resume</h1></Link>
-            <Link className='sp-link' to='/contact'><h1 className='bump-hover'>Contact</h1></Link>
+            <Link className='sp-link' to='/portfolio'>
+              <div className='hover-wrap'>
+                <h1 className='sp-page'>Portfolio</h1>
+              </div>
+            </Link>
+            <br/>
+            <Link className='sp-link' to='/resume'>
+              <div className='hover-wrap'>
+                <h1 className='sp-page'>Resume</h1>
+              </div>
+            </Link>
+            <br/>
+            <Link className='sp-link' to='/contact'>
+              <div className='hover-wrap'>
+                <h1 className='sp-page'>Contact</h1>
+              </div>
+            </Link>
+            <br/>
           </div>
         </div>
       </div>

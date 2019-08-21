@@ -12,13 +12,13 @@ class OptionButton extends Component {
   }
 
   getIcon=()=>{
-    if(this.props.option=='Writing'){
+    if(this.props.option==='Writing'){
       return <FontAwesomeIcon className='OB-icon' icon={faEdit} />
     }
-    if(this.props.option=='Python'){
+    if(this.props.option==='Python'){
       return <FontAwesomeIcon className='OB-icon' icon={faPython} />
     }
-    if(this.props.option=='Web'){
+    if(this.props.option==='Web'){
       return <FontAwesomeIcon className='OB-icon' icon={faDesktop} />
     }
     else{

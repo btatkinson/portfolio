@@ -12,12 +12,28 @@
   background-size: 400% 400%;
   animation: gradientBG1 3s forwards;
 }
+@-webkit-keyframes gradientBG1 {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 @keyframes gradientBG1 {
   0% {
     background-position: 0% 50%;
   }
   100% {
     background-position: 100% 50%;
+  }
+}
+@-webkit-keyframes gradientBG2 {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 @keyframes gradientBG2 {
@@ -51,16 +67,21 @@
   color: white;
   text-decoration: none;
 }
-.sp-link:hover{
+.hover-wrap:hover{
   color: $lgrey;
   text-decoration: none;
 }
-.sp-link:hover{
+.hover-wrap:hover{
   text-shadow: 0 2px 2px black;
 }
 
-.bump-hover:hover{
-  transform: translateY(-2px);
+.hover-wrap{
+  display: inline-block;
+}
+
+.sp-page{
+  margin-top:12.5px;
+  margin-bottom:12.5px;
 }
 
 .spr-box{

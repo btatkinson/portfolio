@@ -28,13 +28,14 @@
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  flex: 2;
+  flex: 2.5;
 }
 
 .r-photo{
   margin: 20px;
   border-radius: 10px;
   background-color: white;
+  display: inline-block;
 }
 .r-profile{
   width: 100%;
@@ -56,6 +57,31 @@
 }
 .r-smlink{
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.twit-link:hover .r-smicon{
+  color: #1DA1F1;
+}
+.twit-link:hover .r-smtext{
+  color: #1DA1F1;
+}
+.git-link:hover .r-smicon{
+  color: #24292D;
+}
+.git-link:hover .r-smtext{
+  color: #24292D;
+}
+
+.cl-link{
+  color: $green;
+}
+.cl-link:hover{
+  color: $blue;
+}
+.cl-link:active{
+  color: $blue;
 }
 .r-smtext{
   color: grey;
@@ -67,6 +93,10 @@
   color: grey;
   font-size: 18px;
 }
+.r-smsubtitle{
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
 
 .r-panel{
   background-color: white;
@@ -76,11 +106,98 @@
   width: 100%;
 }
 
-.r-smsubtitle{
-  margin-top: 6px;
-  margin-bottom: 6px;
+.r-icon{
+  padding-right: 10px;
+}
+
+.r-subsect{
+  color: grey;
+  margin-top:15px;
+  margin-bottom:5px;
+}
+
+.r-desc{
+  margin-left: 15px;
 }
 
 .r-info{
   color: darken($lgrey,30%);
+  margin-top: 8px;
+  margin-bottom:10px;
+}
+.r-bullet{
+  margin: 5px 0;
+}
+
+.graph-cont{
+  width: 85%;
+  max-width: 800px;
+  margin: 20px;
+}
+.r-btext{
+  color:white;
+  position: absolute;
+  z-index: 7;
+}
+.r-bar{
+  height: 40px;
+  max-width: 800px;
+  margin: 5px auto 10px auto;
+  line-height: 8px;
+  font-size: 16px;
+  color: white;
+  padding: 0 0 0 15px;
+  border-radius: 10px;
+  position: relative;
+}
+.r-bar::before{
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 40px;
+  top: 0;
+  z-index: 3;
+  border-radius: 10px;
+  background: $lgrey;
+}
+.r-bar::after{
+  content: '';
+  background: $orange;
+  height: 40px;
+  display: block;
+  animation: bar-before forwards 3s;
+  animation-delay: 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.r-bar1::after{
+  max-width: 100%;
+}
+.r-bar2::after{
+  max-width: 80%;
+}
+.r-bar3::after{
+  max-width: 60%;
+}
+
+@-webkit-keyframes bar-before{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+@keyframes bar-before{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
 }
