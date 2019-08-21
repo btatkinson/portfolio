@@ -6,7 +6,7 @@ import Resume from './components/pages/Resume.js';
 import Portfolio from './components/pages/Portfolio.js';
 import Page from './components/helpers/Page.js';
 import './styles/Transitions.scss';
-import './App.css';
+import './styles/App.scss';
 
 class App extends Component {
 

@@ -21,7 +21,7 @@ export const ppython = {
     'url':'https://github.com/btatkinson/sportsball-elo'
   },
   2:{
-    'title':'Pro-Football-Reference.com Spider',
+    'title':'Pro-Football-Reference.com Scraper',
     'subtitle': 'Scrapes roster data from pro-football-reference.',
     'icon':faFootballBall,
     'skill1':'Scrapy',

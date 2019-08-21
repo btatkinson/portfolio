@@ -6,7 +6,6 @@ import { pwriting }from '../../objects/portfolio-writing.js';
 import { pweb }from '../../objects/portfolio-web.js';
 import { ppython }from '../../objects/portfolio-python.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFootballBall,faBasketballBall, faGolfBall } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/Portfolio.scss';
 
 class Portfolio extends Component {

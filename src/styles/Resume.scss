@@ -1,19 +1,86 @@
+@import '_colors.scss';
+
 .resume{
-  height: 100%;
-  width:100%;
+  background-color: $lgrey;
+  height:100%;
+  overflow-y: auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
 }
 
-.resume>h1{
-  margin: 0;
+.resume-body{
+  border-radius: 10px;
+  margin-top:40px;
+  margin-bottom:40px;
+  display: flex;
+  width: 85%;
 }
 
-.resume-container{
-  height:100%;
+.r-column1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.r-column2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+.r-photo{
+  margin: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+.r-profile{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.r-social{
+  background-color: white;
+  margin:0px;
+  padding: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.r-socialrow{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.r-smlink{
+  text-decoration: none;
+}
+.r-smtext{
+  color: grey;
+  font-size: 18px;
+  padding-right: 18px;
+  margin: 5px;
+}
+.r-smicon{
+  color: grey;
+  font-size: 18px;
+}
+
+.r-panel{
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+  width: 100%;
+}
+
+.r-smsubtitle{
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.r-info{
+  color: darken($lgrey,30%);
 }

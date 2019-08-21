@@ -1,6 +1,4 @@
-
-$head-height: 150px;
-$sp-exittime: 2s;
+@import '_colors.scss';
 
 .splash{
   height: 100%;
@@ -47,11 +45,14 @@ $sp-exittime: 2s;
 
 .sp-body{
   width: 100%;
-  color: white;
 }
 
 .sp-link{
-  color:white;
+  color: white;
+  text-decoration: none;
+}
+.sp-link:hover{
+  color: $lgrey;
   text-decoration: none;
 }
 .sp-link:hover{

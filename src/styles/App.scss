@@ -1,0 +1,52 @@
+@import '_colors.scss';
+
+html, body, #root{
+  height: 100%;
+  width: 100%;
+}
+
+.page{
+  height: 100%;
+  width: 100%;
+}
+
+.blue-border{
+  border: 2px solid $blue;
+  box-shadow: 2px 2px 2px $blue;
+}
+
+.yellow-border{
+  border: 2px solid yellow;
+  box-shadow: 2px 2px 2px yellow;
+}
+
+.green-border{
+  border: 2px solid $green;
+  box-shadow: 2px 2px 2px $green;
+}
+
+.orange-border{
+  border: 2px solid $orange;
+  box-shadow: 2px 2px 2px $orange;
+}
+
+.pink-border{
+  border: 2px solid $pink;
+  box-shadow: 2px 2px 2px $pink;
+}
+
+.blue-text{
+  color: $blue;
+}
+.green-text{
+  color: $green;
+}
+.yellow-text{
+  color: yellow;
+}
+.orange-text{
+  color: $orange;
+}
+.pink-text{
+  color: $pink;
+}

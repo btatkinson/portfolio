@@ -39,7 +39,7 @@ export const pwriting = {
     'url':'https://towardsdatascience.com/visualizing-different-nfl-player-styles-88ef31420539',
   },
   4:{
-    'title':'What would a hockey 2-point line look like?',
+    'title':'What Would an NHL Hockey 2-point Line Look Like?',
     'subtitle': 'A stats experiment using the NHL API',
     'icon':faFootballBall,
     'skill1':'Python/Matplotlib',
