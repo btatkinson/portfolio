@@ -23,7 +23,7 @@
 .project-item{
   height:85%;
   width: 100%;
-  padding: 12.5px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -31,7 +31,7 @@
 
 .proj-icon{
   height:100%;
-  width:12.5%;
+  width:10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,7 @@
 
 .proj-skills{
   height: 100%;
-  width: 25%;
+  width: 27.5%;
   color:grey;
   display: flex;
   justify-content: flex-start;
@@ -73,4 +73,9 @@
   margin-left:10px;
   margin-bottom: 4px;
   margin-top:4px;
+}
+
+.pi-pad{
+  padding-left: 4px;
+  padding-right: 4px;
 }

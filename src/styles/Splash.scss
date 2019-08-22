@@ -1,7 +1,7 @@
 @import '_colors.scss';
 
-$entertime: 2000ms;
-$exittime: 2000ms;
+$entertime: 1500ms;
+$exittime: 1500ms;
 
 .splash{
   height: 100%;
@@ -69,6 +69,27 @@ $exittime: 2000ms;
 .sp-page{
   margin-top:12.5px;
   margin-bottom:12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-wrap{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sp-icon{
+  padding-left: 0px;
+  padding-right: 5px;
+}
+
+.sp-i{
+  padding-left: 0;
+  padding-right: 20px;
 }
 
 .spr-box{

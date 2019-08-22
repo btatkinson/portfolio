@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGavel } from '@fortawesome/free-solid-svg-icons';
+import { faGavel,faDesktop } from '@fortawesome/free-solid-svg-icons';
 
 export const pweb = {
   0:{
@@ -10,5 +10,14 @@ export const pweb = {
     'skill2':'Node.js/Javascript',
     'skill3':'HTML/CSS/Photoshop',
     'url':'https://collaborativelaw.com/'
+  },
+  1:{
+    'title':'Link to Portfolio Repo',
+    'subtitle': '',
+    'icon':faDesktop,
+    'skill1':'Create-React-App',
+    'skill2':'Custom Transitions',
+    'skill3':'HTML/CSS',
+    'url':'https://github.com/btatkinson/portfolio'
   },
 }

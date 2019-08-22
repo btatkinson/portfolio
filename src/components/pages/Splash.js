@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import { Animated } from "react-animated-css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/Splash.scss';
 
 class Splash extends Component {
@@ -79,13 +79,31 @@ class Splash extends Component {
               </div>
             </Animated>)}
             {this.state.beginInfo && (
-              <Animated animationIn="flipInX" animationOut="flipOutX" animationInDuration={1000} animationOutDuration={1000} isVisible={this.state.showInfo}>
-                <div onClick={this.flipBack} className='sp-link'>
+            <Animated animationIn="flipInX" animationOut="flipOutX" animationInDuration={1000} animationOutDuration={1000} isVisible={this.state.showInfo}>
+              <div className='info-wrap'>
+                  <div className='sp-phone'>
+                    <div className='sp-page'>
+                      <FontAwesomeIcon className='sp-icon' icon={faPhone} />
+                      <h3 className='sp-i'>270-791-8106</h3>
+                    </div>
+                  </div>
+                  <div className='sp-email'>
+                    <div className='sp-page'>
+                      <FontAwesomeIcon className='sp-icon' icon={faEnvelope} />
+                      <h3 className='sp-i'>blaketatkinson@gmail.com</h3>
+                    </div>
+                  </div>
+                  <div onClick={this.flipBack} className='sp-link'>
                   <div className='hover-wrap'>
-                    <h1 className='sp-page'>Back</h1>
+                      <div className='sp-page'>
+                        <FontAwesomeIcon className='sp-icon' icon={faChevronCircleLeft} />
+                        <h3 className='sp-i'>Hide</h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </Animated>
+
             )}
           </div>
         </div>

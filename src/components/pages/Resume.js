@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../components/Header.js';
+import profpic from '../../images/profile-pic.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUniversity,faBriefcase, faDesktop } from '@fortawesome/free-solid-svg-icons';
 import { faGithub,faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -19,7 +20,7 @@ class Resume extends Component {
           <div className='r-column1'>
             <div className='r-photo blue-border'>
               <div className='photo-wrap'>
-                <img className='r-profile' src="https://source.unsplash.com/user/erondu/300x300"/>
+                <img className='r-profile' src={profpic}/>
               </div>
               <div className='r-social'>
                 <h2 className='r-smsubtitle blue-text'>Social</h2>

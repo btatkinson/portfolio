@@ -13,16 +13,16 @@ class ProjectItem extends Component {
       <div className='project-item-container'>
         <a className='project-link' href={this.props.info.url}>
         <div className='project-item'>
-          <div className='proj-icon'>
+          <div className='proj-icon pi-pad'>
             <FontAwesomeIcon className='OB-icon' icon={this.props.info.icon} />
           </div>
           <div className='proj-title'>
-            <div className='pt-wrapper'>
+            <div className='pt-wrapper pi-pad'>
               <h2>{this.props.info.title}</h2>
               <p>{this.props.info.subtitle}</p>
             </div>
           </div>
-          <div className='proj-skills'>
+          <div className='proj-skills pi-pad'>
             <div>
               <h4>Skills:</h4>
             </div>
