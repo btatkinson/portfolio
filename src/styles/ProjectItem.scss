@@ -1,5 +1,50 @@
 @import './_colors.scss';
 
+// for tablets and smaller
+@media all and (min-width: 0px) and (max-width: 768px) {
+
+.project-item{
+  flex-wrap: wrap;
+  justify-content: center !important;
+  align-items: flex-start !important;
+}
+
+.project-item{
+  padding:8px 4px !important;
+}
+.proj-icon{
+  display: none !important;
+}
+.proj-skills{
+  display: none !important;
+}
+.proj-title{
+  font-size: 12px !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.m-proj-skills{
+  display: flex !important;
+  font-size: 10px !important;
+  margin: 0px 4px !important;
+}
+.m-proj-skills>p{
+  margin: 2px 0px !important;
+}
+
+.pt-wrapper>h2{
+  margin:4px !important;
+}
+.pt-wrapper>p{
+  margin:2px 4px  !important;
+}
+.project-item-container{
+  height: auto !important;
+}
+
+}
+
 .project-item-container{
   width:99.75%;
   height: 150px;
@@ -73,6 +118,10 @@
   margin-left:10px;
   margin-bottom: 4px;
   margin-top:4px;
+}
+
+.m-proj-skills{
+  display: none;
 }
 
 .pi-pad{

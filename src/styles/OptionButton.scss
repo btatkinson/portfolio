@@ -1,6 +1,25 @@
 @import './colors.scss';
 
 
+@media all and (min-width: 0px) and (max-width: 768px) {
+  .OB-container{
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .OptionText{
+    font-size: 25px !important;
+  }
+  .OptionButton{
+    border-radius: 50%;
+    background-color: $lgrey;
+    width: 50px !important;
+    height:50px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    font-size: 20px !important;
+  }
+}
+
 $borderWidth: 3px;
 
 

@@ -20,6 +20,9 @@ class ProjectItem extends Component {
             <div className='pt-wrapper pi-pad'>
               <h2>{this.props.info.title}</h2>
               <p>{this.props.info.subtitle}</p>
+              <div className='m-proj-skills'>
+                <p>{this.props.info.skill1} • {this.props.info.skill2} • {this.props.info.skill3}</p>
+              </div>
             </div>
           </div>
           <div className='proj-skills pi-pad'>

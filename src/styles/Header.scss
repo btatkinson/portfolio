@@ -1,3 +1,43 @@
+@media all and (min-width: 0px) and (max-width: 768px) {
+  .header{
+    height:150px;
+    width:100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG1 3s forwards;
+  }
+
+  .hd-title{
+    font-size: 35px !important;
+  }
+  .hd-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7.5px !important;
+    height: 25px !important;
+    width: 75px !important;
+    border-radius: 10px !important;
+    margin-left:auto !important;
+    margin-right:25px !important;
+  }
+
+  .hd-link:active{
+    opacity: 0 !important;
+  }
+  .hd-link:focus{
+    opacity: 0 !important;
+  }
+  .title-group{
+    margin-left: 25px !important;
+  }
+}
+
+/////////////// End Header Styles ///////////////
+
 .header{
   height:150px;
   width:100%;

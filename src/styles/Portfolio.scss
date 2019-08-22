@@ -1,6 +1,18 @@
 @import './_colors.scss';
 
 
+// for tablets and smaller
+@media all and (min-width: 0px) and (max-width: 768px) {
+  .portfolio-body{
+    border-radius: 10px;
+    margin-top:40px;
+    margin-bottom:40px;
+    margin-left: 5px !important;
+    margin-right: 5px!important;
+  }
+}
+
+
 .portfolio{
   background-color: $lgrey;
   height:100%;
