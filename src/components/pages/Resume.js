@@ -3,6 +3,7 @@ import Header from '../components/Header.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUniversity,faBriefcase, faDesktop } from '@fortawesome/free-solid-svg-icons';
 import { faGithub,faTwitter } from '@fortawesome/free-brands-svg-icons';
+import debounce from 'lodash/debounce';
 import '../../styles/Resume.scss';
 
 class Resume extends Component {
@@ -12,7 +13,7 @@ class Resume extends Component {
 
   render(){
     return(
-      <div className='resume'>
+      <div id='resume' className='resume'>
         <Header className='r-header' title="Resume"/>
         <div className='resume-body'>
           <div className='r-column1'>

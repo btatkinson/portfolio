@@ -1,5 +1,8 @@
 @import '_colors.scss';
 
+$entertime: 2000ms;
+$exittime: 2000ms;
+
 .splash{
   height: 100%;
   width:100%;
@@ -10,7 +13,7 @@
   align-items: center;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradientBG1 3s forwards;
+  animation: gradientBG1 $entertime forwards;
 }
 @-webkit-keyframes gradientBG1 {
   0% {
@@ -26,22 +29,6 @@
   }
   100% {
     background-position: 100% 50%;
-  }
-}
-@-webkit-keyframes gradientBG2 {
-  0% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes gradientBG2 {
-  0% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
   }
 }
 
@@ -66,13 +53,13 @@
 .sp-link{
   color: white;
   text-decoration: none;
+  display: flex;
 }
 .hover-wrap:hover{
   color: $lgrey;
   text-decoration: none;
-}
-.hover-wrap:hover{
   text-shadow: 0 2px 2px black;
+  cursor: pointer;
 }
 
 .hover-wrap{

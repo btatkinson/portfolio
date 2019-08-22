@@ -4,7 +4,6 @@ import { TransitionGroup, CSSTransition, Transition } from 'react-transition-gro
 import Splash from './components/pages/Splash.js';
 import Resume from './components/pages/Resume.js';
 import Portfolio from './components/pages/Portfolio.js';
-import Page from './components/helpers/Page.js';
 import './styles/Transitions.scss';
 import './styles/App.scss';
 
@@ -24,17 +23,6 @@ class App extends Component {
     }
   }
 
-  enter = (pathname, node) => {
-    console.log(pathname);
-    console.log(pathname);
-    return
-  }
-  exit = (pathname, node) => {
-    console.log(pathname);
-    console.log(node);
-    return
-  }
-
   render(){
     return (
       <Route render={({ location }) => {
@@ -43,8 +31,6 @@ class App extends Component {
           <TransitionGroup component={null}>
             <CSSTransition
               key={key}
-              onEnter={(node) => this.enter(pathname, node)}
-              onExit = {(node) => this.exit(pathname, node)}
               timeout={{enter: 2000, exit: 2000}}
               classNames={'transition'}
             >
