@@ -3,6 +3,23 @@
 $entertime: 1500ms;
 $exittime: 1500ms;
 
+@media all and (min-width: 0px) and (max-width: 768px) {
+
+  .info-wrap{
+    display: block !important;
+  }
+  .sp-i{
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+  .sp-phone{
+    display: flex !important;
+  }
+  .sp-page2{
+    margin: 0px 0px !important;
+  }
+}
+
 .splash{
   height: 100%;
   width:100%;
@@ -67,6 +84,13 @@ $exittime: 1500ms;
 }
 
 .sp-page{
+  margin-top:12.5px;
+  margin-bottom:12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sp-page2{
   margin-top:12.5px;
   margin-bottom:12.5px;
   display: flex;

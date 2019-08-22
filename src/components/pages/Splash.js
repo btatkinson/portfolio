@@ -82,20 +82,20 @@ class Splash extends Component {
             <Animated animationIn="flipInX" animationOut="flipOutX" animationInDuration={1000} animationOutDuration={1000} isVisible={this.state.showInfo}>
               <div className='info-wrap'>
                   <div className='sp-phone'>
-                    <div className='sp-page'>
+                    <div className='sp-page2'>
                       <FontAwesomeIcon className='sp-icon' icon={faPhone} />
                       <h3 className='sp-i'>270-791-8106</h3>
                     </div>
                   </div>
                   <div className='sp-email'>
-                    <div className='sp-page'>
+                    <div className='sp-page2'>
                       <FontAwesomeIcon className='sp-icon' icon={faEnvelope} />
                       <h3 className='sp-i'>blaketatkinson@gmail.com</h3>
                     </div>
                   </div>
                   <div onClick={this.flipBack} className='sp-link'>
                   <div className='hover-wrap'>
-                      <div className='sp-page'>
+                      <div className='sp-page2'>
                         <FontAwesomeIcon className='sp-icon' icon={faChevronCircleLeft} />
                         <h3 className='sp-i'>Hide</h3>
                       </div>
